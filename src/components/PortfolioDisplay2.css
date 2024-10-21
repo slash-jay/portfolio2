@@ -268,3 +268,50 @@ h1 {
 p {
   font-size: 0.85em;
 }
+
+/* Mobile Responsiveness */
+@media (max-width: 768px) {
+  .navbar ul {
+      flex-direction: column;
+      padding: 0;
+      gap: 10px; /* Less space between navbar items */
+  }
+
+  .navbar a {
+      padding: 8px 16px; /* Smaller padding for buttons */
+  }
+
+  .interactive-card-container {
+      margin-left: 0; /* Reset margin on mobile */
+      margin: 0 auto; /* Center the card */
+      width: 90%; /* Full width on mobile */
+  }
+
+  .interactive-card {
+      width: 100%; /* Full width on mobile */
+      padding: 0.5em; /* Adjust padding */
+  }
+
+  .profile-picture {
+      max-width: 80%; /* Make profile picture larger on mobile */
+      margin-left: 10%; /* Center the image */
+      display: block;
+  }
+
+  .glitch {
+      font-size: 2em; /* Smaller font size on mobile */
+  }
+
+  h1 {
+      font-size: 1.5em; /* Adjust header size */
+  }
+
+  p {
+      font-size: 0.75em; /* Adjust paragraph size */
+  }
+
+  .button-container {
+      flex-direction: column; /* Stack buttons vertically */
+      align-items: center; /* Center buttons */
+  }
+}
