@@ -24,11 +24,77 @@ body, html {
 
 }
 .animated-text {
-  font-size: 100px;
+  /* From Uiverse.io by neerajbaniwal */ 
+
+  position: absolute;
+  top: 30%;
+  left: 40%; 
+  transform: translate(-50%, -50%);
+  padding: 12px 48px;
   color: #fff;
-  animation: colorAndMove 10s infinite; /* Animating color and movement every 10 seconds infinitely */
-  display: inline-block; /* Ensures text moves within its container */
+  background: linear-gradient(to right, #9f9f9f 0, #fff 10%, #868686 20%);
+  background-position: 0;
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  animation: shine 3s infinite linear;
+  animation-fill-mode: forwards;
+  -webkit-text-size-adjust: none;
+  font-weight: 600;
+  font-size: 50px;
+  text-decoration: none;
+  white-space: nowrap;
+  font-family: "Poppins", sans-serif;
+  padding: 10px 20px;
 }
+@-moz-keyframes shine {
+  0% {
+    background-position: 0;
+  }
+  60% {
+    background-position: 180px;
+  }
+  100% {
+    background-position: 180px;
+  }
+}
+@-webkit-keyframes shine {
+  0% {
+    background-position: 0;
+  }
+  60% {
+    background-position: 180px;
+  }
+  100% {
+    background-position: 180px;
+  }
+}
+@-o-keyframes shine {
+  0% {
+    background-position: 0;
+  }
+  60% {
+    background-position: 180px;
+  }
+  100% {
+    background-position: 180px;
+  }
+}
+@keyframes shine {
+  0% {
+    background-position: 0;
+  }
+  60% {
+    background-position: 180px;
+  }
+  100% {
+    background-position: 180px;
+  }
+}
+
+  /* font-size: 100px;
+  color: #fff;
+  display: inline-block; /* Ensures text moves within its container */
+
 @keyframes colorAndMove {
   0% {
     color: #ffffff; /* Red */
@@ -191,10 +257,12 @@ body, html {
 .card-texture-20 {
   background: linear-gradient(to bottom right, rgba(0, 0, 0, 1), rgba(0, 0, 0, 0.1));
 }
+
 .profile-picture {
+
   max-width: 20%; /* Adjust this value as needed */
   border-radius: 20px;
-  margin: 0 auto; /* Center horizontally */
+margin-left: 70%;
   display: block; /* Ensures the margin auto works */
   transition: transform 0.5s ease;
   animation: pulse 2s infinite; /* Add pulse effect */
