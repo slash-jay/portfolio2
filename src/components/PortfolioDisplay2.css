@@ -6,7 +6,7 @@ body, html {
   width: 100%;
   font-family: 'Nunito', sans-serif;
   background: linear-gradient(270deg, #282829, #1c1616, #1c1b1a);
-  background-size: 400% 400%;
+  background-size: 400vw 400vh; /* Use vw and vh for responsive sizing */
   animation: gradient 15s ease infinite;
 }
 
@@ -44,7 +44,6 @@ body, html {
 
 /* Shine Animation */
 @keyframes shine {
-  /* 0% { background-position: 0; } */
   60% { background-position: 180px; }
   100% { background-position: 180px; }
 }
@@ -52,7 +51,15 @@ body, html {
 /* Mobile Responsiveness */
 @media (max-width: 768px) {
   .animated-text {
-      font-size: 30px; /* Smaller font size on mobile */
+    font-size: 30px; /* Smaller font size on mobile */
+    top: 20%; /* Adjust vertical position for mobile */
+  }
+}
+
+@media (max-width: 480px) {
+  .animated-text {
+    font-size: 24px; /* Further decrease font size on very small screens */
+    top: 15%; /* Further adjust vertical position for smaller screens */
   }
 }
 
