@@ -195,7 +195,7 @@ const PortfolioDisplay2 = () => {
           {defaultData.cv && (
             <section id="cv" className="portfolio-section">
               <h2 className="glitch">CV</h2>
-              <InteractiveCard className={`journey-item card-texture-${16}`}>
+              <InteractiveCard className={`journey-item card-texture-${6}`}>
                 <div className="button-container">
                   <a href={defaultData.cv} target="_blank" rel="noopener noreferrer" className="cv-button">
                     Download CV
