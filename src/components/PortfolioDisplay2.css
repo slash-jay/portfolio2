@@ -23,36 +23,39 @@ body, html {
       var(--g3) 0 calc(1.73 * var(--s)) #1e1e1e;
   background-size: calc(2 * var(--s)) calc(3.46 * var(--s));
 }
-
 /* Animated Text */
 .animated-text {
   position: absolute;
-  top: 30%;
-  left: 40%; 
-  transform: translate(-50%, -50%);
-  padding: 12px 48px;
-  color: #fff;
-  background: linear-gradient(to right, #9f9f9f 0, #fff 10%, #868686 20%);
-  background-position: 0;
-  -webkit-background-clip: text;
-  -webkit-text-fill-color: transparent;
-  animation: shine 3s infinite linear;
-  animation-fill-mode: forwards;
-  -webkit-text-size-adjust: none;
+  top: 30%; /* Adjust vertical position */
+  left: 40%; /* Center horizontally */
+  transform: translate(-50%, -50%); /* Center the text */
+  padding: 12px 48px; /* Padding */
+  color: transparent; /* Hide default text color */
+  background: linear-gradient(to right, #959595 0%, #303030 50%, #c7c5c5 100%); /* Gradient for text */
+  background-clip: text; /* Apply gradient to text */
+  -webkit-background-clip: text; /* Support for Safari */
+  animation: shine 3s infinite linear; /* Animation */
   font-weight: 600;
-  font-size: 50px;
+  font-size: 50px; /* Default font size */
   text-decoration: none;
   white-space: nowrap;
   font-family: "Poppins", sans-serif;
-  padding: 10px 20px;
 }
 
 /* Shine Animation */
 @keyframes shine {
-  0% { background-position: 0; }
+  /* 0% { background-position: 0; } */
   60% { background-position: 180px; }
   100% { background-position: 180px; }
 }
+
+/* Mobile Responsiveness */
+@media (max-width: 768px) {
+  .animated-text {
+      font-size: 30px; /* Smaller font size on mobile */
+  }
+}
+
 
 /* Navbar Styles */
 .navbar {
@@ -104,6 +107,7 @@ body, html {
 .interactive-card-container {
   margin-left: 190px;
   perspective: 1000px;
+  margin-bottom: 30px;
 }
 
 .interactive-card {
@@ -126,7 +130,7 @@ body, html {
 /* Card Background Textures */
 .card-texture-1 { background: linear-gradient(to bottom right, rgba(255, 85, 85, 1), rgba(255, 85, 85, 0.1)); }
 .card-texture-2 { background: linear-gradient(to bottom right, rgba(0, 204, 204, 1), rgba(0, 204, 204, 0.1)); }
-.card-texture-3 { background: linear-gradient(to bottom right, rgb(224, 121, 255), rgba(255, 162, 0, 0.1)); }
+.card-texture-3 { background: linear-gradient(to bottom right, rgb(219, 234, 145), rgba(255, 162, 0, 0.1)); }
 .card-texture-4 { background: linear-gradient(to bottom right, rgba(136, 78, 255, 1), rgba(136, 78, 255, 0.1)); }
 .card-texture-5 { background: linear-gradient(to bottom right, rgba(255, 94, 0, 1), rgba(255, 94, 0, 0.1)); }
 .card-texture-6 { background: linear-gradient(to bottom right, rgb(121, 246, 252), rgba(76, 175, 80, 0.1)); }
@@ -314,4 +318,18 @@ p {
       flex-direction: column; /* Stack buttons vertically */
       align-items: center; /* Center buttons */
   }
+}
+.project-title {
+  font-size: 2em;
+  font-weight: 500;
+  color: #ffffff;
+  text-align: center;
+  margin-top: 1em;
+}
+.short-description {
+  font-size: 1.5em;
+  font-weight: 300;
+  color: #ffffff;
+  text-align: center;
+  margin-top: 1em;
 }

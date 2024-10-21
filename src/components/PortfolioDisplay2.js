@@ -10,7 +10,7 @@ import profile from './jay.jpg'; // Import the profile picture
 const PortfolioDisplay2 = () => {
   // Hardcoded data
   const defaultData = {
-    name: 'Jaya Shankar',
+    name: 'Jaya Shankar`s portfolio',
     picture: profile,
     shortDescription:
       'I am a passionate software developer actively seeking new opportunities to leverage my skills and contribute to impactful projects. With a strong background in computer science and hands-on experience in various programming languages and technologies, I thrive on solving complex problems and building innovative solutions.',
@@ -77,7 +77,7 @@ const PortfolioDisplay2 = () => {
 
       <div className="contenta">
         <div className="content">
-          <h1 className="animated-text">{defaultData.name}'s Portfolio</h1>
+          <h1 className="animated-text">{defaultData.name}</h1>
 
           {/* Profile Picture and Description */}
           {defaultData.picture && (
@@ -98,14 +98,14 @@ const PortfolioDisplay2 = () => {
               <InteractiveCard className={`journey-item card-texture-${4}`}>
                 <div style={{ display: 'flex', alignItems: 'center' }}>
                   <img src={Email} alt="Email" style={{ width: '50px', height: '50px', borderRadius: '50%', marginRight: '15px' }} />
-                  {defaultData.email && <p><strong>Email:</strong> {defaultData.email}</p>}
+                  {defaultData.email && <p style={{fontSize:'20px'}}><strong>Email:</strong> {defaultData.email}</p>}
                 </div>
                 <div style={{ display: 'flex', alignItems: 'center' }}>
                   <img src={LinkedIn} alt="LinkedIn" style={{ width: '50px', height: '50px', borderRadius: '50%', marginRight: '15px' }} />
                   {defaultData.linkedIn && (
-                    <p>
+                    <p style={{fontSize:'20px'}}>
                       <strong>LinkedIn:</strong>
-                      <a href={defaultData.linkedIn} target="_blank" rel="noopener noreferrer" style={{ textDecoration: 'none', color: '#0077B5', fontWeight: 'bold', marginLeft: '5px' }}>
+                      <a href={defaultData.linkedIn} target="_blank" rel="noopener noreferrer" style={{ textDecoration: 'none', fontWeight: 'bold', marginLeft: '5px' }}>
                         LinkedIn Profile
                       </a>
                     </p>
@@ -114,7 +114,7 @@ const PortfolioDisplay2 = () => {
                 <div style={{ display: 'flex', alignItems: 'center' }}>
                   <img src={GitHub} alt="GitHub" style={{ width: '50px', height: '50px', borderRadius: '50%', marginRight: '15px' }} />
                   {defaultData.github && (
-                    <p>
+                    <p style={{fontSize:'20px'}}>
                       <strong>GitHub:</strong>
                       <a href={defaultData.github} target="_blank" rel="noopener noreferrer">
                         {defaultData.github}
@@ -149,7 +149,7 @@ const PortfolioDisplay2 = () => {
               <h2 className="glitch">Skills</h2>
               {defaultData.skills.map((skill, index) => (
                 skill.category && (
-                  <InteractiveCard key={index} className={`journey-item card-texture-${3}`}>
+                  <InteractiveCard key={index} className={`journey-item card-texture-${11}`}>
                     <div className="content">
                       <strong>{skill.category}</strong>: {skill.details}
                     </div>
@@ -168,7 +168,7 @@ const PortfolioDisplay2 = () => {
                   <InteractiveCard key={index} className={`journey-item card-texture-${8}`}>
                     <div className="content">
                       <div className="project-title-container">
-                        <p className="heading project-title move-title">{project.title}</p>
+                        <p className=" project-title ">{project.title}</p>
                       </div>
                       {project.description && <p className="para">{project.description}</p>}
                       {project.technologies && <p className="para"><strong>Technologies:</strong> {project.technologies}</p>}
@@ -195,7 +195,7 @@ const PortfolioDisplay2 = () => {
           {defaultData.cv && (
             <section id="cv" className="portfolio-section">
               <h2 className="glitch">CV</h2>
-              <InteractiveCard className={`journey-item card-texture-${6}`}>
+              <InteractiveCard className={`journey-item card-texture-${3}`}>
                 <div className="button-container">
                   <a href={defaultData.cv} target="_blank" rel="noopener noreferrer" className="cv-button">
                     Download CV
