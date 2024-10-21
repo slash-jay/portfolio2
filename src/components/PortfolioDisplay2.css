@@ -9,7 +9,8 @@ body, html {
   background-size: 400% 400%;
   animation: gradient 15s ease infinite;
 }
-.contenta{
+
+.contenta {
   width: 100%;
   height: 100%;
   --s: 37px; /* control the size */
@@ -18,14 +19,13 @@ body, html {
   --g2: conic-gradient(from 180deg at 43.75% calc(425% / 6), var(--c));
   --g3: conic-gradient(from -60deg at 50% calc(175% / 12), var(--c));
   background: var(--g1), var(--g1) var(--s) calc(1.73 * var(--s)), var(--g2),
-    var(--g2) var(--s) calc(1.73 * var(--s)), var(--g3) var(--s) 0,
-    var(--g3) 0 calc(1.73 * var(--s)) #1e1e1e;
+      var(--g2) var(--s) calc(1.73 * var(--s)), var(--g3) var(--s) 0,
+      var(--g3) 0 calc(1.73 * var(--s)) #1e1e1e;
   background-size: calc(2 * var(--s)) calc(3.46 * var(--s));
-
 }
-.animated-text {
-  /* From Uiverse.io by neerajbaniwal */ 
 
+/* Animated Text */
+.animated-text {
   position: absolute;
   top: 30%;
   left: 40%; 
@@ -46,85 +46,20 @@ body, html {
   font-family: "Poppins", sans-serif;
   padding: 10px 20px;
 }
-@-moz-keyframes shine {
-  0% {
-    background-position: 0;
-  }
-  60% {
-    background-position: 180px;
-  }
-  100% {
-    background-position: 180px;
-  }
-}
-@-webkit-keyframes shine {
-  0% {
-    background-position: 0;
-  }
-  60% {
-    background-position: 180px;
-  }
-  100% {
-    background-position: 180px;
-  }
-}
-@-o-keyframes shine {
-  0% {
-    background-position: 0;
-  }
-  60% {
-    background-position: 180px;
-  }
-  100% {
-    background-position: 180px;
-  }
-}
+
+/* Shine Animation */
 @keyframes shine {
-  0% {
-    background-position: 0;
-  }
-  60% {
-    background-position: 180px;
-  }
-  100% {
-    background-position: 180px;
-  }
+  0% { background-position: 0; }
+  60% { background-position: 180px; }
+  100% { background-position: 180px; }
 }
 
-  /* font-size: 100px;
-  color: #fff;
-  display: inline-block; /* Ensures text moves within its container */
-
-@keyframes colorAndMove {
-  0% {
-    color: #ffffff; /* Red */
-    transform: translateX(150); /* Start position */
-  }
-  25% {
-    color: #cfe0ff; /* Pink */
-    transform: translateX(60%); /* Move 30% to the right */
-  }
-  50% {
-    color: #c9ffa9; /* Light Blue */
-    transform: translateX(150); /* Move back to the center */
-  }
-  75% {
-    color: #9de8d4; /* Green */
-    transform: translateX(-3%); /* Move 30% to the left */
-  }
-  100% {
-    color: #bc9fb8; /* Light Purple */
-    transform: translateX(150); /* Return to original position */
-  }
-}
+/* Navbar Styles */
 .navbar {
   position: sticky;
   top: 0;
   background: linear-gradient(270deg, #61bbeb, #000000, #3a3a3a);
-  /* background-color: rgba(113, 30, 30, 0.9);
-   */
-   animation: gradient 15s ease infinite;
-
+  animation: gradient 15s ease infinite;
   padding: 15px;
   z-index: 1000;
   text-align: center;
@@ -158,6 +93,7 @@ body, html {
   transform: scale(1.15) rotate(2deg);
 }
 
+/* Gradient Animation */
 @keyframes gradient {
   0% { background-position: 0% 50%; }
   50% { background-position: 100% 50%; }
@@ -166,7 +102,6 @@ body, html {
 
 /* Card Styles */
 .interactive-card-container {
-  /* width: 70%; */
   margin-left: 190px;
   perspective: 1000px;
 }
@@ -188,110 +123,40 @@ body, html {
   gap: 0.75em;
 }
 
+/* Card Background Textures */
+.card-texture-1 { background: linear-gradient(to bottom right, rgba(255, 85, 85, 1), rgba(255, 85, 85, 0.1)); }
+.card-texture-2 { background: linear-gradient(to bottom right, rgba(0, 204, 204, 1), rgba(0, 204, 204, 0.1)); }
+.card-texture-3 { background: linear-gradient(to bottom right, rgb(224, 121, 255), rgba(255, 162, 0, 0.1)); }
+.card-texture-4 { background: linear-gradient(to bottom right, rgba(136, 78, 255, 1), rgba(136, 78, 255, 0.1)); }
+.card-texture-5 { background: linear-gradient(to bottom right, rgba(255, 94, 0, 1), rgba(255, 94, 0, 0.1)); }
+.card-texture-6 { background: linear-gradient(to bottom right, rgb(121, 246, 252), rgba(76, 175, 80, 0.1)); }
+.card-texture-7 { background: linear-gradient(to bottom right, rgba(51, 105, 30, 1), rgba(51, 105, 30, 0.1)); }
+.card-texture-8 { background: linear-gradient(to bottom right, rgba(63, 81, 181, 1), rgba(63, 81, 181, 0.1)); }
+.card-texture-9 { background: linear-gradient(to bottom right, rgba(255, 255, 0, 1), rgba(255, 255, 0, 0.1)); }
+.card-texture-10 { background: linear-gradient(to bottom right, rgba(255, 0, 255, 1), rgba(255, 0, 255, 0.1)); }
+.card-texture-11 { background: linear-gradient(to bottom right, rgba(0, 255, 255, 1), rgba(0, 255, 255, 0.1)); }
+.card-texture-12 { background: linear-gradient(to bottom right, rgba(255, 0, 0, 1), rgba(255, 0, 0, 0.1)); }
+.card-texture-13 { background: linear-gradient(to bottom right, rgba(0, 255, 0, 1), rgba(0, 255, 0, 0.1)); }
+.card-texture-14 { background: linear-gradient(to bottom right, rgba(0, 0, 255, 1), rgba(0, 0, 255, 0.1)); }
+.card-texture-15 { background: linear-gradient(to bottom right, rgba(255, 255, 255, 1), rgba(255, 255, 255, 0.1)); }
+.card-texture-16 { background: linear-gradient(to bottom right, rgba(0, 0, 0, 1), rgba(0, 0, 0, 0.1)); }
+.card-texture-17 { background: linear-gradient(to bottom right, rgba(255, 255, 255, 1), rgba(255, 255, 255, 0.1)); }
+.card-texture-18 { background: linear-gradient(to bottom right, rgba(0, 0, 0, 1), rgba(0, 0, 0, 0.1)); }
+.card-texture-19 { background: linear-gradient(to bottom right, rgba(255, 255, 255, 1), rgba(255, 255, 255, 0.1)); }
+.card-texture-20 { background: linear-gradient(to bottom right, rgba(0, 0, 0, 1), rgba(0, 0, 0, 0.1)); }
 
-/* Different Background Styles */
-.card-texture-1 {
-  background: linear-gradient(to bottom right, rgba(255, 85, 85, 1), rgba(255, 85, 85, 0.1));
-}
-
-.card-texture-2 {
-  background: linear-gradient(to bottom right, rgba(0, 204, 204, 1), rgba(0, 204, 204, 0.1));
-}
-
-.card-texture-3 {
-  background: linear-gradient(to bottom right, rgb(224, 121, 255), rgba(255, 162, 0, 0.1));
-}
-
-.card-texture-4 {
-  background: linear-gradient(to bottom right, rgba(136, 78, 255, 1), rgba(136, 78, 255, 0.1));
-}
-
-.card-texture-5 {
-  background: linear-gradient(to bottom right, rgba(255, 94, 0, 1), rgba(255, 94, 0, 0.1));
-}
-
-.card-texture-6 {
-  background: linear-gradient(to bottom right, rgb(121, 246, 252), rgba(76, 175, 80, 0.1));
-}
-
-.card-texture-7 {
-  background: linear-gradient(to bottom right, rgba(51, 105, 30, 1), rgba(51, 105, 30, 0.1));
-}
-
-.card-texture-8 {
-  background: linear-gradient(to bottom right, rgba(63, 81, 181, 1), rgba(63, 81, 181, 0.1));
-}
-.card-texture-9 {
-  background: linear-gradient(to bottom right, rgba(255, 255, 0, 1), rgba(255, 255, 0, 0.1));
-}
-.card-texture-10 {
-  background: linear-gradient(to bottom right, rgba(255, 0, 255, 1), rgba(255, 0, 255, 0.1));
-}
-.card-texture-11 {
-  background: linear-gradient(to bottom right, rgba(0, 255, 255, 1), rgba(0, 255, 255, 0.1));
-}
-.card-texture-12 {
-  background: linear-gradient(to bottom right, rgba(255, 0, 0, 1), rgba(255, 0, 0, 0.1));
-}
-.card-texture-13 {
-  background: linear-gradient(to bottom right, rgba(0, 255, 0, 1), rgba(0, 255, 0, 0.1));
-}
-.card-texture-14 {
-  background: linear-gradient(to bottom right, rgba(0, 0, 255, 1), rgba(0, 0, 255, 0.1));
-}
-.card-texture-15 {
-  background: linear-gradient(to bottom right, rgba(255, 255, 255, 1), rgba(255, 255, 255, 0.1));
-}
-.card-texture-16 {
-  background: linear-gradient(to bottom right, rgba(0, 0, 0, 1), rgba(0, 0, 0, 0.1));
-}
-.card-texture-17 {
-  background: linear-gradient(to bottom right, rgba(255, 255, 255, 1), rgba(255, 255, 255, 0.1));
-}
-.card-texture-18 {
-  background: linear-gradient(to bottom right, rgba(0, 0, 0, 1), rgba(0, 0, 0, 0.1));
-}
-.card-texture-19 {
-  background: linear-gradient(to bottom right, rgba(255, 255, 255, 1), rgba(255, 255, 255, 0.1));
-}
-.card-texture-20 {
-  background: linear-gradient(to bottom right, rgba(0, 0, 0, 1), rgba(0, 0, 0, 0.1));
-}
-
+/* Profile Picture Styles */
 .profile-picture {
-
   max-width: 20%; /* Adjust this value as needed */
   border-radius: 20px;
-margin-left: 70%;
+  margin-left: 70%;
   display: block; /* Ensures the margin auto works */
   transition: transform 0.5s ease;
   animation: pulse 2s infinite; /* Add pulse effect */
 }
 
-/* Add more textures as needed */
-
-.interactive-card:hover {
-  box-shadow: 0 0 30px rgba(75, 30, 133, 0.5);
-}
-
-.card-light {
-  position: absolute;
-  top: 0;
-  left: 0;
-  width: 100%;
-  height: 100%;
-  z-index: -1;
-  transition: background 0.3s ease;
-}
-
-h1 {
-  font-size: 2em;
-  font-weight: 500;
-}
-
-p {
-  font-size: 0.85em;
-}.button-container {
+/* Button Styles */
+.button-container {
   display: flex;
   gap: 1em; /* Space between buttons */
   justify-content: center; /* Center buttons */
@@ -308,7 +173,8 @@ p {
   color: white; /* Text color */
 }
 
-.view-button {
+/* Button Specific Styles */
+.view-button, .download-button {
   background: rgba(32, 57, 224, 0.7); /* Adjust background color */
   padding: 10px 20px;
   text-transform: uppercase;
@@ -316,49 +182,19 @@ p {
   font-size: 17px;
   font-weight: 500;
   color: #ffffff80;
-  text-shadow: none;
- 
   cursor: pointer;
-  box-shadow: rgb(255, 33, 255);
-  border: 1px solid #3016f4;
-  transition: 0.5s ease;
-  user-select: none;
-}
-
-.download-button {
-  background: rgba(32, 57, 224, 0.7);
-  padding: 10px 20px;
-  text-transform: uppercase;
-  border-radius: 8px;
-  font-size: 17px;
-  font-weight: 500;
-  color: #ffffff80;
-  text-shadow: none;
-  /* background: transparent; */
-  cursor: pointer;
-  box-shadow: rgb(0, 200, 255);
-  border: 1px solid #5824e7;
   transition: 0.5s ease;
   user-select: none;
 }
 
 .button:hover {
   padding: 10px 20px;
-  text-transform: uppercase;
-  border-radius: 8px;
-  font-size: 17px;
-  font-weight: 500;
   color: #ffffff80;
-  text-shadow: none;
   background: transparent;
-  cursor: pointer;
-  box-shadow: transparent;
   border: 1px solid #ffffff80;
-  transition: 0.5s ease;
-  user-select: none;
 }
 
-/* Button Styles */
+/* Additional Button Styles */
 button {
   padding: 10px 20px;
   text-transform: uppercase;
@@ -366,13 +202,9 @@ button {
   font-size: 17px;
   font-weight: 500;
   color: #ffffff80;
-  text-shadow: none;
   background: transparent;
-  cursor: pointer;
-  box-shadow: transparent;
   border: 1px solid #ffffff80;
   transition: 0.5s ease;
-  user-select: none;
 }
 
 button:hover {
@@ -380,64 +212,59 @@ button:hover {
   background: #008cff;
   border: 1px solid #008cff;
   text-shadow: 0 0 5px #ffffff, 0 0 10px #ffffff, 0 0 20px #ffffff;
-  box-shadow: 0 0 5px #008cff, 0 0 20px #008cff, 0 0 50px #008cff,
-    0 0 100px #008cff;
 }
-.skill-item{
+
+/* Skill Item Styles */
+.skill-item {
   display: flex;
   justify-content: space-between;
   align-items: center;
   padding: 0.5em;
   border-radius: 0.5em;
- 
   backdrop-blur: 12px;
 }
-button svg {
-  width: 1.5em;
-  height: 1.5em;
-  transition: transform 0.3s ease;
-}
 
-button:hover svg {
-  transform: translateX(10%);
-}
-
-/* Card Animation */
-@keyframes moving {
-  0% { transform: rotate(0); }
-  100% { transform: rotate(360deg); }
-}
+/* Glitch Effect */
 .glitch {
   font-size: 3em; /* Adjust the size as needed */
   color: #fff; /* Default text color */
-  /* text-shadow: 0 0 10px rgb(255, 255, 255); */
-             
   animation: colorChange 5s infinite alternate, bounce 1s infinite;
 }
 
 @keyframes colorChange {
-  0% {
-    color: #87e9ff; /* Initial color */
-  }
-  25% {
-    color: #323232; /* Color change */
-  }
-  50% {
-    color: #e7ffb7; /* Color change */
-  }
-  75% {
-    color: #303132; /* Color change */
-  }
-  100% {
-    color: #9de8ff; /* Final color */
-  }
+  0% { color: #87e9ff; }
+  25% { color: #323232; }
+  50% { color: #e7ffb7; }
+  75% { color: #303132; }
+  100% { color: #9de8ff; }
 }
 
 @keyframes bounce {
-  0%, 100% {
-    transform: translateY(0);
-  }
-  50% {
-    transform: translateY(-10px); /* Move the text slightly up */
-  }
+  0%, 100% { transform: translateY(0); }
+  50% { transform: translateY(-10px); }
+}
+
+/* Card Hover Effects */
+.interactive-card:hover {
+  box-shadow: 0 0 30px rgba(75, 30, 133, 0.5);
+}
+
+.card-light {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  z-index: -1;
+  transition: background 0.3s ease;
+}
+
+/* General Text Styles */
+h1 {
+  font-size: 2em;
+  font-weight: 500;
+}
+
+p {
+  font-size: 0.85em;
 }
